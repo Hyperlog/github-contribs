@@ -1,0 +1,82 @@
+{
+  "name": "@hyperlog/github-contribs",
+  "version": "1.0.0",
+  "description": "List all List all GitHub repos a user has contributed to since the beginning",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyperlog/github-contribs.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hyperlog/github-contribs/issues"
+  },
+  "homepage": "https://github.com/Hyperlog/github-contribs#readme",
+  "author": {
+    "name": "Aditya Giri",
+    "email": "aditya@hyperlog.io",
+    "url": "https://github.com/BrainBuzzer"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "xo && nyc ava"
+  },
+  "keywords": [
+    "cli-app",
+    "cli",
+    "github",
+    "repo",
+    "repositories",
+    "contrib",
+    "contribs",
+    "contributions"
+  ],
+  "dependencies": {
+    "es6-promise-pool": "^2.5.0",
+    "fetch-retry": "^1.2.1",
+    "htmlparser": "^1.7.7",
+    "meow": "^7.0.1",
+    "moment": "^2.26.0",
+    "ora": "^4.0.4"
+  },
+  "devDependencies": {
+    "all-contributors-cli": "^6.15.0",
+    "ava": "*",
+    "codecov": "^3.7.0",
+    "nyc": "^15.1.0",
+    "xo": "0.32.0"
+  },
+  "xo": {
+    "esnext": true,
+    "rules": {
+      "brace-style": "off",
+      "capitalized-comments": "off",
+      "comma-dangle": "off",
+      "indent": "off",
+      "max-depth": "off",
+      "max-params": "off",
+      "no-unused-vars": "off",
+      "no-use-before-define": "off",
+      "no-warning-comments": "off",
+      "padded-blocks": "off",
+      "spaced-comment": "off",
+      "unicorn/explicit-length-check": "off"
+    },
+    "space": true
+  },
+  "nyc": {
+    "reporter": [
+      "html",
+      "lcov",
+      "text"
+    ],
+    "all": true,
+    "extension": [
+      ".js"
+    ],
+    "check-coverage": true,
+    "lines": 75
+  }
+}

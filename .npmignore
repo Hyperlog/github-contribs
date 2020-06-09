@@ -1,0 +1,6 @@
+/.all-contributorsrc
+/.nyc_output/
+/.travis.yml
+/coverage/
+/test.js
+/yarn.lock
