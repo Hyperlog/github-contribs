@@ -16,12 +16,14 @@
     "email": "aditya@hyperlog.io",
     "url": "https://github.com/BrainBuzzer"
   },
+  "types": "types/index.d.ts",
   "bin": "cli.js",
   "engines": {
     "node": ">=12"
   },
   "scripts": {
-    "test": "xo && nyc ava"
+    "test": "xo && nyc ava && tsd",
+    "dtslint": "dtslint types"
   },
   "keywords": [
     "cli-app",
@@ -45,7 +47,9 @@
     "all-contributors-cli": "^6.15.0",
     "ava": "*",
     "codecov": "^3.7.0",
+    "dtslint": "^3.6.11",
     "nyc": "^15.1.0",
+    "tsd": "^0.11.0",
     "xo": "0.32.0"
   },
   "xo": {

@@ -45,7 +45,6 @@
 
   // See https://stackoverflow.com/a/28431880/1855917
   const stringToDate = string => {
-
     return new Date(`${string.slice(0, 10)}T00:00:00Z`);
   };
 
