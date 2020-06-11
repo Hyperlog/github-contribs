@@ -1,6 +1,6 @@
 {
   "name": "@hyperlog/github-contribs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "List all List all GitHub repos a user has contributed to since the beginning",
   "repository": {
     "type": "git",
